@@ -1,0 +1,23 @@
+.border-gradient-gold {
+  position: relative;
+  border-color: transparent !important;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: inherit;
+    padding: 2px;
+    background: linear-gradient(135deg, #9B754B 0%, #F9CF6E 36.06%, #D48A48 67.79%, #D6A53D 100%);
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    pointer-events: none;
+  }
+}
+
+.bg-gradient-gold {
+  background: linear-gradient(135deg, #9B754B 0%, #F9CF6E 36.06%, #D48A48 67.79%, #D6A53D 100%);
+}
